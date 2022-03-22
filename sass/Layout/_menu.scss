@@ -1,0 +1,258 @@
+@import "../Base/mixins";
+
+// @media screen and (min-width: 264px)
+// @media screen and(max-width: 991px) {
+body {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+a,
+a:active,
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.iconback {
+  color: black;
+}
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: auto;
+  padding-left: 5%;
+}
+.fa-solid {
+  vertical-align: middle;
+}
+.header_logo2 {
+  width: 150px;
+  height: auto;
+  padding-top: 35px;
+  padding-bottom: 20px;
+  padding-right: 25%;
+}
+.menu1 {
+  @include photoentete;
+  background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+}
+.menu2 {
+  @include photoentete;
+  background-image: url(../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+}
+
+.menu3 {
+  @include photoentete;
+  background-image: url(../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+}
+
+.menu4 {
+  @include photoentete;
+  background-image: url(../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+}
+
+.menus {
+  border-radius: 50px 50px 0 0;
+  background-color: #f2f2f2;
+  height: 1200px;
+  padding: 10px;
+}
+.titremenu {
+  @include titremenu;
+}
+
+.ttrmenush2 {
+  border-bottom: solid 2px #99e2d0;
+  width: 40px;
+  font-size: 14px;
+  font-weight: 400;
+  padding-top: 30px;
+  margin-bottom: 10px;
+}
+
+.container_offre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 70px;
+  -webkit-box-pack: right;
+  -ms-flex-pack: right;
+  justify-content: right;
+  overflow: hidden;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 5px 19px -2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 5px 19px -2px rgba(0, 0, 0, 0.3);
+}
+.offre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  color: #181617;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.nomPlat_overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-left: 15px;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 80%;
+}
+
+.detailPlat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-size: 0.8em;
+  padding-right: 15px;
+  margin-left: 15px;
+}
+
+.detailPlat_overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.box {
+  width: 100px;
+  margin-right: -100px;
+  border-radius: 0 15px 15px 0;
+  line-height: 80px;
+  text-align: center;
+}
+
+.container_offre:hover .box {
+  cursor: pointer;
+  -webkit-animation-name: move;
+  animation-name: move;
+  -webkit-animation-duration: 0.6s;
+  animation-duration: 0.6s;
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+  background-color: #99e2d0;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.circle-check {
+  -webkit-filter: invert(1);
+  filter: invert(1);
+  font-size: 20px;
+}
+.container_offre:hover .circle-check {
+  cursor: pointer;
+  -webkit-animation: rotation 1s ease-in-out;
+  animation: rotation 1s ease-in-out;
+}
+.tarif {
+  font-weight: bold;
+  font-size: 0.9em;
+}
+.titre_container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 10px;
+  padding-bottom: 20px;
+  column-gap: 20px;
+}
+.reservation_btn {
+  @include button();
+}
+
+.btoncomande {
+  margin-top: 90px;
+}
+
+// @media screen and (min-width: 768px)
+@media screen and (min-width: 992px) {
+  .menu_box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 10px;
+  }
+
+  .box {
+    width: 100px;
+    margin-right: -100px;
+    border-radius: 0 15px 15px 0;
+    line-height: 80px;
+    text-align: center;
+  }
+
+  .entrées,
+  .plats,
+  .desserts {
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+  }
+
+  .menu1 {
+    width: 100%;
+    height: 350px;
+    background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+    margin-bottom: -45px;
+    background-size: cover;
+    padding-bottom: 50px;
+  }
+
+  .titre_container {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: center;
+    margin: 10px;
+    column-gap: 20px;
+  }
+}

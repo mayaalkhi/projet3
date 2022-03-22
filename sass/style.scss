@@ -1,0 +1,426 @@
+// @media screen and (max-width: 768px) {
+// remise à zéro des paramètres par défaut
+a {
+  text-decoration: none;
+  color: black;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:focus {
+  text-decoration: none;
+}
+a:hover,
+a:active {
+  text-decoration: none;
+}
+//importation fichier _variables.scss
+@import "./Base/variables";
+
+// importation fichier _mixins.scss
+@import "./Base/mixins";
+
+// importation fichier _animations.scss
+@import "./Base/animations";
+
+//importation fichier _menu.scss
+@import "./Layout/menu";
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+input {
+  border: hidden;
+  caret-color: transparent;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+header {
+  display: block;
+  padding-left: 0;
+}
+
+.logo {
+  display: flex;
+  width: 150px;
+  height: auto;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.header_input {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 0.2px inset;
+}
+
+input {
+  outline-width: 0;
+  border: none;
+  background-color: transparent;
+  height: 30px;
+  padding-left: 20px;
+}
+
+.section_reservation {
+  width: 100%;
+  height: 220px;
+  background-color: #f6f6f6;
+}
+
+.reservation_txt {
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 30px;
+}
+
+.reservation_btn {
+  @include button();
+}
+
+.reservation_btn a {
+  color: white;
+  padding: 10px 30px;
+}
+
+.section_fonctionnement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.fonctionnement_choisissez {
+  @include menumob();
+  &:hover .fa-mobile-screen-button {
+    color: #9356dc;
+  }
+}
+
+.fonctionnement_composez {
+  @include menumob();
+  &:hover .fa-list {
+    color: #9356dc;
+  }
+}
+
+.fonctionnement_degustez {
+  @include menumob();
+  &:hover .fa-store {
+    color: #9356dc;
+  }
+}
+
+.fonctionnement_icones {
+  display: inline-block;
+  background-color: $Primaire;
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  text-align: center;
+  line-height: 20px;
+  margin-left: -12px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  color: white;
+}
+
+.fa-mobile-screen-button {
+  margin-left: 10px;
+  color: grey;
+  padding-right: 10px;
+}
+
+.fa-list {
+  margin-left: 10px;
+  color: grey;
+  padding-right: 10px;
+}
+
+.fa-store {
+  margin-left: 10px;
+  color: grey;
+  padding-right: 10px;
+}
+
+.fa-1,
+.fa-2,
+.fa-3 {
+  font-size: 0.5em;
+}
+
+.restaurants {
+  background-color: #f6f6f6;
+  margin-top: 40px;
+  padding-bottom: 40px;
+}
+
+.restaurants_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+}
+
+.restaurants_fiche {
+  position: relative;
+  width: 70%;
+  height: 200px;
+  background-color: white;
+  border-radius: 25px;
+  -webkit-box-shadow: 0px 5px 19px -2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 5px 19px -2px rgba(0, 0, 0, 0.3);
+}
+
+.restaurants_fiche img {
+  @include arrondisup();
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+
+.restaurants_fiche_detail {
+  position: relative;
+}
+
+.restaurants_fiche_nouveaute {
+  display: flex;
+  width: 90px;
+  height: 35px;
+  background-color: #99e2d0;
+  color: #008766;
+  position: absolute;
+  align-items: center;
+  top: 10px;
+  right: 10px;
+  justify-content: center;
+  border-radius: 3px;
+}
+
+.nomresto,
+.lieuresto {
+  padding-left: 15px;
+  color: black;
+  // font-size: 16px;
+}
+
+// h4 et "nomresto" sont une seule et même balise
+h4 {
+  padding-top: 5px;
+}
+
+.ttrh2index {
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  margin-left: 40px;
+}
+
+// Footer identique sur l'ensemble du site
+footer {
+  width: 100%;
+  height: auto;
+  background-color: #353535;
+  color: #f2f2f2;
+  line-height: 30px;
+}
+
+.navigation {
+  padding-left: 15px;
+}
+
+.logo3 {
+  width: 150px;
+  height: auto;
+  object-fit: cover;
+  padding-left: 20px;
+  padding-top: 20px;
+  filter: invert(100%);
+}
+
+.fa-handshake-angle,
+.fa-utensils {
+  width: 24px;
+}
+
+.lien_blanc a {
+  color: white;
+}
+
+// fin du footer
+
+// @media screen and (min-width: 992px)
+@media screen and (min-width: 992px) {
+  body {
+    box-sizing: content-box;
+    font-family: "Roboto";
+  }
+
+  .logo {
+    display: flex;
+    width: 150px;
+    height: auto;
+    margin: auto;
+  }
+
+  .header_input {
+    text-align: center;
+    margin-top: 30px;
+    background-color: #eaeaea;
+    border-top: 0.2px inset;
+  }
+
+  input {
+    outline-width: 0;
+    border: none;
+    background-color: transparent;
+    height: 30px;
+    padding-left: 20px;
+  }
+
+  .reservation {
+    width: 100%;
+    height: 200px;
+    background-color: #f6f6f6;
+  }
+
+  .reservation_txt {
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 30px;
+  }
+
+  // .reservation_btn {
+  //   // @include degrade();
+  //   // @include button();
+  // }
+
+  .reservation_btn a {
+    color: white;
+    padding: 10px 10px;
+    font-size: 14px;
+  }
+
+  .fonctionnement {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 40px;
+    padding-top: 20px;
+  }
+
+  .fonctionnement_icones {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 20px;
+    border-radius: 12px;
+    text-align: center;
+    color: white;
+    margin-left: -12px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+
+  .fa-mobile-screen-button {
+    margin-left: 10px;
+  }
+
+  .fa-list {
+    margin-left: 10px;
+  }
+
+  .fa-store {
+    margin-left: 10px;
+  }
+
+  .fa-1,
+  .fa-2,
+  .fa-3 {
+    font-size: 0.5em;
+  }
+
+  .restaurants {
+    background-color: #f6f6f6;
+    margin-top: 40px;
+  }
+  .nomresto,
+  .lieuresto {
+    padding-left: 15px;
+    color: black;
+    // font-size: 26px;
+  }
+
+  // h4 et "nomresto" sont une seule et même balise
+  h4 {
+    padding-top: 10px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .ttrh2index {
+    text-align: center;
+  }
+  .restaurants_list {
+    // @include degrade;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 30px;
+  }
+  .restaurants_fiche {
+    width: 40%;
+    height: 300px;
+    background-color: white;
+    border-radius: 25px;
+    margin: 20px;
+    -webkit-box-shadow: 0px 5px 19px -2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 5px 19px -2px rgba(0, 0, 0, 0.3);
+    position: relative;
+  }
+
+  .restaurants_fiche img {
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+  }
+
+  .restaurants_fiche_detail {
+    position: relative;
+  }
+
+  .restaurants_fiche_nouveaute {
+    display: flex;
+    width: 90px;
+    height: 35px;
+    background-color: #99e2d0;
+    color: #008766;
+    position: absolute;
+    align-items: center;
+    top: 10px;
+    right: 10px;
+    justify-content: center;
+  }
+
+  .restaurants {
+    background-color: #f6f6f6;
+    margin-top: 40px;
+    padding-bottom: 40px;
+  }
+}

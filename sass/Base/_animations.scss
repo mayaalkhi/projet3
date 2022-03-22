@@ -1,0 +1,169 @@
+// composition du loader spinner
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #231123;
+  z-index: 1;
+  animation: finish 200ms 3s forwards;
+}
+
+.spinner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  border: 5px solid #99e2d0;
+  border-radius: 50%;
+}
+
+.spinner-rayon {
+  border-radius: 50%;
+  position: absolute;
+  width: 115%;
+  height: 115%;
+  border: 35px solid transparent;
+}
+
+.logospin {
+  animation: loading-opacity 3s ease infinite;
+  font-size: 30px;
+  background: -webkit-linear-gradient(180deg, #ff79da, #9356dc, #99e2d0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: Shrikhand;
+}
+
+.spinner-rayon-violet {
+  animation: rotate 0.2s ease-in infinite;
+  border-top: 35px double #9356dc;
+}
+
+.spinner-rayon-rose {
+  animation: rotate 0.3s ease infinite;
+  border-top: 35px double #ff79da;
+}
+
+.spinner-rayon-vert {
+  animation: rotate 0.2s ease-in-out infinite;
+  border-top: 35px double #99e2d0;
+}
+// fin description du loader spinner
+
+// animation du loader
+@keyframes rotate {
+  from {
+    transform: rotate (-90deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loading-opacity {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.1;
+  }
+}
+
+@keyframes finish {
+  0% {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
+// double animation du check
+@keyframes move {
+  0% {
+    margin-right: -100px;
+  }
+  100% {
+    margin-right: 0px;
+  }
+}
+
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+// fin d'animation du check
+
+// animation du menu (apparition progressive)
+@keyframes fadeIn {
+  0% {
+    -webkit-transform: translateY(40px);
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.container_offre {
+  -webkit-animation: fadeIn 3s;
+  animation: fadeIn 3s;
+  -webkit-animation-delay: 300ms;
+  animation-delay: 300ms;
+}
+// fin animation menu (apparition progressive)
+
+//animation coeur
+.heart-plein {
+  position: absolute;
+  top: 15px;
+  right: 19px;
+  font-size: 27px;
+  background: -webkit-linear-gradient(90deg, #ff79da, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transform: scale(0);
+}
+.heart-vide {
+  position: absolute;
+  display: inline-block;
+  top: 15px;
+  right: 20px;
+  font-size: 25px;
+  color: gray;
+}
+
+//animation coeur
+.heart-anim:hover .heart-vide {
+  transform: scale(0);
+  transition: transform 2s;
+}
+
+//animation coeur
+.heart-anim:hover .heart-plein {
+  transform: scale(1);
+  transition: transform 2s;
+}
+// fin animation coeur
