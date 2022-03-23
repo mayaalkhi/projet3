@@ -10,8 +10,6 @@ body {
   text-decoration: none;
 }
 
-a,
-a:active,
 a:visited {
   color: white;
   text-decoration: none;
@@ -19,34 +17,39 @@ a:visited {
 
 .iconback {
   color: black;
+  padding-bottom: 20px;
 }
-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.headermenu {
+  // display: -webkit-box;
+  // display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: auto;
-  padding-left: 5%;
+  // -webkit-box-orient: horizontal;
+  // -webkit-box-direction: normal;
+  // -ms-flex-direction: row;
+  // flex-direction: row;
+  // -webkit-box-pack: justify;
+  // -ms-flex-pack: justify;
+  justify-content: space-around;
+  // -webkit-box-align: center;
+  // -ms-flex-align: center;
+  // align-items: center;
+  // width: auto;
+  // padding-left: 5%;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
-.fa-solid {
-  vertical-align: middle;
+.left-pad {
+  padding-top: 35px;
 }
 .header_logo2 {
   width: 150px;
   height: auto;
   padding-top: 35px;
   padding-bottom: 20px;
-  padding-right: 25%;
 }
+//
+//   padding-right: 25%;
+// }
 .menu1 {
   @include photoentete;
   background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
@@ -72,6 +75,7 @@ header {
   height: 1200px;
   padding: 10px;
 }
+
 .titremenu {
   @include titremenu;
 }
@@ -202,7 +206,7 @@ header {
   @include button();
 }
 
-.btoncomande {
+.btoncommande {
   margin-top: 90px;
 }
 

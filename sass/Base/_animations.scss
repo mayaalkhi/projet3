@@ -34,7 +34,7 @@
 }
 
 .logospin {
-  animation: loading-opacity 3s ease infinite;
+  animation: loading-opacity 3s ease-out infinite;
   font-size: 30px;
   background: -webkit-linear-gradient(180deg, #ff79da, #9356dc, #99e2d0);
   background-clip: text;
@@ -44,17 +44,17 @@
 }
 
 .spinner-rayon-violet {
-  animation: rotate 0.2s ease-in infinite;
+  animation: rotate 0.2s ease infinite;
   border-top: 35px double #9356dc;
 }
 
 .spinner-rayon-rose {
-  animation: rotate 0.3s ease infinite;
+  animation: rotate 0.3s ease-in infinite;
   border-top: 35px double #ff79da;
 }
 
 .spinner-rayon-vert {
-  animation: rotate 0.2s ease-in-out infinite;
+  animation: rotate 0.2s ease-out infinite;
   border-top: 35px double #99e2d0;
 }
 // fin description du loader spinner

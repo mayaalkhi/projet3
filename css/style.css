@@ -1,7 +1,7 @@
 @charset "UTF-8";
 a {
   text-decoration: none;
-  color: black;
+  color: #5a2cda;
 }
 
 a:visited {
@@ -69,8 +69,8 @@ a:active {
 }
 
 .logospin {
-  -webkit-animation: loading-opacity 3s ease infinite;
-          animation: loading-opacity 3s ease infinite;
+  -webkit-animation: loading-opacity 3s ease-out infinite;
+          animation: loading-opacity 3s ease-out infinite;
   font-size: 30px;
   background: -webkit-linear-gradient(180deg, #ff79da, #9356dc, #99e2d0);
   background-clip: text;
@@ -80,20 +80,20 @@ a:active {
 }
 
 .spinner-rayon-violet {
-  -webkit-animation: rotate 0.2s ease-in infinite;
-          animation: rotate 0.2s ease-in infinite;
+  -webkit-animation: rotate 0.2s ease infinite;
+          animation: rotate 0.2s ease infinite;
   border-top: 35px double #9356dc;
 }
 
 .spinner-rayon-rose {
-  -webkit-animation: rotate 0.3s ease infinite;
-          animation: rotate 0.3s ease infinite;
+  -webkit-animation: rotate 0.3s ease-in infinite;
+          animation: rotate 0.3s ease-in infinite;
   border-top: 35px double #ff79da;
 }
 
 .spinner-rayon-vert {
-  -webkit-animation: rotate 0.2s ease-in-out infinite;
-          animation: rotate 0.2s ease-in-out infinite;
+  -webkit-animation: rotate 0.2s ease-out infinite;
+          animation: rotate 0.2s ease-out infinite;
   border-top: 35px double #99e2d0;
 }
 
@@ -291,8 +291,6 @@ body {
   text-decoration: none;
 }
 
-a,
-a:active,
 a:visited {
   color: white;
   text-decoration: none;
@@ -300,28 +298,21 @@ a:visited {
 
 .iconback {
   color: black;
+  padding-bottom: 20px;
 }
 
-header {
+.headermenu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: auto;
-  padding-left: 5%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-.fa-solid {
-  vertical-align: middle;
+.left-pad {
+  padding-top: 35px;
 }
 
 .header_logo2 {
@@ -329,7 +320,6 @@ header {
   height: auto;
   padding-top: 35px;
   padding-bottom: 20px;
-  padding-right: 25%;
 }
 
 .menu1 {
@@ -516,7 +506,7 @@ header {
 .reservation_btn {
   display: block;
   margin: auto;
-  margin-top: 30px;
+  margin-top: 40px;
   width: 200px;
   height: 40px;
   border-radius: 25px;
@@ -537,7 +527,7 @@ header {
           filter: brightness(110%);
 }
 
-.btoncomande {
+.btoncommande {
   margin-top: 90px;
 }
 
@@ -619,6 +609,7 @@ body {
 header {
   display: block;
   padding-left: 0;
+  margin-top: 25px;
 }
 
 .logo {
@@ -634,6 +625,7 @@ header {
 .header_input {
   text-align: center;
   margin-top: 30px;
+  background-color: #eaeaea;
   border-top: 0.2px inset;
 }
 
@@ -642,7 +634,7 @@ input {
   border: none;
   background-color: transparent;
   height: 30px;
-  padding-left: 20px;
+  text-align: center;
 }
 
 .section_reservation {
@@ -661,7 +653,7 @@ input {
 .reservation_btn {
   display: block;
   margin: auto;
-  margin-top: 30px;
+  margin-top: 40px;
   width: 200px;
   height: 40px;
   border-radius: 25px;
@@ -711,6 +703,7 @@ input {
   width: 40%;
   height: 50px;
   min-width: 250px;
+  max-width: 300px;
   border-radius: 20px;
   margin-bottom: 30px;
   line-height: 25px;
@@ -733,6 +726,7 @@ input {
   width: 40%;
   height: 50px;
   min-width: 250px;
+  max-width: 300px;
   border-radius: 20px;
   margin-bottom: 30px;
   line-height: 25px;
@@ -755,6 +749,7 @@ input {
   width: 40%;
   height: 50px;
   min-width: 250px;
+  max-width: 300px;
   border-radius: 20px;
   margin-bottom: 30px;
   line-height: 25px;
@@ -885,9 +880,8 @@ h4 {
 
 .ttrh2index {
   padding-top: 40px;
-  padding-left: 20px;
+  padding-left: 15%;
   padding-bottom: 20px;
-  margin-left: 40px;
 }
 
 footer {
@@ -907,7 +901,7 @@ footer {
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
-  padding-left: 20px;
+  padding-left: 30px;
   padding-top: 20px;
   -webkit-filter: invert(100%);
           filter: invert(100%);
@@ -920,6 +914,14 @@ footer {
 
 .lien_blanc a {
   color: white;
+}
+
+.navigation-menu2 {
+  margin-top: 30px;
+}
+
+.btoncommande-menu2 {
+  padding-top: 30px;
 }
 
 @media screen and (min-width: 992px) {
@@ -947,7 +949,7 @@ footer {
     border: none;
     background-color: transparent;
     height: 30px;
-    padding-left: 20px;
+    text-align: center;
   }
   .reservation {
     width: 100%;
@@ -973,14 +975,10 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-column-gap: 40px;
-            column-gap: 40px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-column-gap: 80px;
+            column-gap: 80px;
     padding-top: 20px;
   }
   .fonctionnement_icones {
@@ -994,6 +992,51 @@ footer {
     margin-left: -12px;
     margin-top: 12px;
     margin-bottom: 12px;
+  }
+  .fonctionnement_choisissez {
+    background-color: #f2f2f2;
+    -webkit-box-shadow: 0px 5px 19px -2px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 5px 19px -2px rgba(0, 0, 0, 0.3);
+    width: 30%;
+    height: 50px;
+    min-width: 300px;
+    max-width: 400px;
+    border-radius: 20px;
+    margin-top: 30px;
+    line-height: 25px;
+  }
+  .fonctionnement_choisissez:hover .fa-mobile-screen-button {
+    color: #9356dc;
+  }
+  .fonctionnement_composez {
+    background-color: #f2f2f2;
+    -webkit-box-shadow: 0px 5px 19px -2px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 5px 19px -2px rgba(0, 0, 0, 0.3);
+    width: 30%;
+    height: 50px;
+    min-width: 300px;
+    max-width: 400px;
+    border-radius: 20px;
+    margin-top: 30px;
+    line-height: 25px;
+  }
+  .fonctionnement_composez:hover .fa-list {
+    color: #9356dc;
+  }
+  .fonctionnement_degustez {
+    background-color: #f2f2f2;
+    -webkit-box-shadow: 0px 5px 19px -2px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 5px 19px -2px rgba(0, 0, 0, 0.3);
+    width: 30%;
+    height: 50px;
+    min-width: 300px;
+    max-width: 400px;
+    border-radius: 20px;
+    margin-top: 30px;
+    line-height: 25px;
+  }
+  .fonctionnement_degustez:hover .fa-store {
+    color: #9356dc;
   }
   .fa-mobile-screen-button {
     margin-left: 10px;
@@ -1021,11 +1064,9 @@ footer {
   h4 {
     padding-top: 10px;
   }
-}
-
-@media screen and (min-width: 992px) {
   .ttrh2index {
     text-align: center;
+    padding-left: 0;
   }
   .restaurants_list {
     display: -webkit-box;

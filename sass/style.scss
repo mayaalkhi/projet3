@@ -2,7 +2,7 @@
 // remise à zéro des paramètres par défaut
 a {
   text-decoration: none;
-  color: black;
+  color: rgb(90, 44, 218);
 }
 a:visited {
   text-decoration: none;
@@ -48,6 +48,7 @@ body {
 header {
   display: block;
   padding-left: 0;
+  margin-top: 25px;
 }
 
 .logo {
@@ -57,10 +58,10 @@ header {
   margin: auto;
   margin-top: 30px;
 }
-
 .header_input {
   text-align: center;
   margin-top: 30px;
+  background-color: #eaeaea;
   border-top: 0.2px inset;
 }
 
@@ -69,8 +70,25 @@ input {
   border: none;
   background-color: transparent;
   height: 30px;
-  padding-left: 20px;
+  text-align: center;
 }
+// .header_input {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   text-align: center;
+//   margin-top: 30px;
+//   border-top: 0.2px inset;
+// }
+
+// input {
+//   outline-width: 0;
+//   border: none;
+//   background-color: transparent;
+//   height: 30px;
+//   width: min-content;
+//   text-align: center;
+// }
 
 .section_reservation {
   width: 100%;
@@ -224,9 +242,9 @@ h4 {
 
 .ttrh2index {
   padding-top: 40px;
-  padding-left: 20px;
+  padding-left: 15%;
   padding-bottom: 20px;
-  margin-left: 40px;
+  // margin-left: 40px;
 }
 
 // Footer identique sur l'ensemble du site
@@ -246,7 +264,7 @@ footer {
   width: 150px;
   height: auto;
   object-fit: cover;
-  padding-left: 20px;
+  padding-left: 30px;
   padding-top: 20px;
   filter: invert(100%);
 }
@@ -259,7 +277,12 @@ footer {
 .lien_blanc a {
   color: white;
 }
-
+.navigation-menu2 {
+  margin-top: 30px;
+}
+.btoncommande-menu2 {
+  padding-top: 30px;
+}
 // fin du footer
 
 // @media screen and (min-width: 992px)
@@ -288,7 +311,7 @@ footer {
     border: none;
     background-color: transparent;
     height: 30px;
-    padding-left: 20px;
+    text-align: center;
   }
 
   .reservation {
@@ -318,9 +341,9 @@ footer {
   .fonctionnement {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    column-gap: 40px;
+    // align-items: center;
+    justify-content: space-around;
+    column-gap: 80px;
     padding-top: 20px;
   }
 
@@ -337,6 +360,26 @@ footer {
     margin-bottom: 12px;
   }
 
+  .fonctionnement_choisissez {
+    @include menudesk();
+    &:hover .fa-mobile-screen-button {
+      color: #9356dc;
+    }
+  }
+
+  .fonctionnement_composez {
+    @include menudesk();
+    &:hover .fa-list {
+      color: #9356dc;
+    }
+  }
+
+  .fonctionnement_degustez {
+    @include menudesk();
+    &:hover .fa-store {
+      color: #9356dc;
+    }
+  }
   .fa-mobile-screen-button {
     margin-left: 10px;
   }
@@ -370,11 +413,11 @@ footer {
   h4 {
     padding-top: 10px;
   }
-}
 
-@media screen and (min-width: 992px) {
+  // @media screen and (min-width: 992px) {
   .ttrh2index {
     text-align: center;
+    padding-left: 0;
   }
   .restaurants_list {
     // @include degrade;
