@@ -48,7 +48,7 @@ body {
 header {
   display: block;
   padding-left: 0;
-  margin-top: 25px;
+  // margin-top: 25px;
 }
 
 .logo {
@@ -56,11 +56,11 @@ header {
   width: 150px;
   height: auto;
   margin: auto;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 .header_input {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 20px;
   background-color: #eaeaea;
   border-top: 0.2px inset;
 }
@@ -72,23 +72,6 @@ input {
   height: 30px;
   text-align: center;
 }
-// .header_input {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   text-align: center;
-//   margin-top: 30px;
-//   border-top: 0.2px inset;
-// }
-
-// input {
-//   outline-width: 0;
-//   border: none;
-//   background-color: transparent;
-//   height: 30px;
-//   width: min-content;
-//   text-align: center;
-// }
 
 .section_reservation {
   width: 100%;
@@ -195,7 +178,7 @@ input {
 
 .restaurants_fiche {
   position: relative;
-  width: 70%;
+  width: 90%;
   height: 200px;
   background-color: white;
   border-radius: 25px;
