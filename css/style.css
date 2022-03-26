@@ -519,13 +519,13 @@ a:visited {
   line-height: 40px;
   border-style: none;
   color: white;
-  -webkit-box-shadow: 1px -2px 40px -6px #000000;
-          box-shadow: 1px -2px 40px -6px #000000;
+  -webkit-box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.75);
 }
 
 .reservation_btn:hover {
-  -webkit-box-shadow: 20px -2px 40px -2px #000000;
-          box-shadow: 20px -2px 40px -2px #000000;
+  -webkit-box-shadow: 6px 6px 12px 0px black;
+          box-shadow: 6px 6px 12px 0px black;
   -webkit-filter: brightness(110%);
           filter: brightness(110%);
 }
@@ -665,13 +665,13 @@ input {
   line-height: 40px;
   border-style: none;
   color: white;
-  -webkit-box-shadow: 1px -2px 40px -6px #000000;
-          box-shadow: 1px -2px 40px -6px #000000;
+  -webkit-box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.75);
 }
 
 .reservation_btn:hover {
-  -webkit-box-shadow: 20px -2px 40px -2px #000000;
-          box-shadow: 20px -2px 40px -2px #000000;
+  -webkit-box-shadow: 6px 6px 12px 0px black;
+          box-shadow: 6px 6px 12px 0px black;
   -webkit-filter: brightness(110%);
           filter: brightness(110%);
 }
