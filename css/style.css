@@ -31,15 +31,15 @@ a:active {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-color: #231123;
   z-index: 1;
   -webkit-animation: finish 200ms 3s forwards;
-          animation: finish 200ms 3s forwards;
+  animation: finish 200ms 3s forwards;
 }
 
 .spinner {
@@ -48,11 +48,11 @@ a:active {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 200px;
   height: 200px;
   margin: auto;
@@ -70,7 +70,7 @@ a:active {
 
 .logospin {
   -webkit-animation: loading-opacity 3s ease-out infinite;
-          animation: loading-opacity 3s ease-out infinite;
+  animation: loading-opacity 3s ease-out infinite;
   font-size: 30px;
   background: -webkit-linear-gradient(180deg, #ff79da, #9356dc, #99e2d0);
   background-clip: text;
@@ -81,41 +81,41 @@ a:active {
 
 .spinner-rayon-violet {
   -webkit-animation: rotate 0.2s ease infinite;
-          animation: rotate 0.2s ease infinite;
+  animation: rotate 0.2s ease infinite;
   border-top: 35px double #9356dc;
 }
 
 .spinner-rayon-rose {
   -webkit-animation: rotate 0.3s ease-in infinite;
-          animation: rotate 0.3s ease-in infinite;
+  animation: rotate 0.3s ease-in infinite;
   border-top: 35px double #ff79da;
 }
 
 .spinner-rayon-vert {
   -webkit-animation: rotate 0.2s ease-out infinite;
-          animation: rotate 0.2s ease-out infinite;
+  animation: rotate 0.2s ease-out infinite;
   border-top: 35px double #99e2d0;
 }
 
 @-webkit-keyframes rotate {
   from {
     -webkit-transform: rotate(-90deg);
-            transform: rotate(-90deg);
+    transform: rotate(-90deg);
   }
   to {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
 @keyframes rotate {
   from {
     -webkit-transform: rotate(-90deg);
-            transform: rotate(-90deg);
+    transform: rotate(-90deg);
   }
   to {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
@@ -150,22 +150,22 @@ a:active {
 @-webkit-keyframes finish {
   0% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
   to {
     -webkit-transform: scale(0);
-            transform: scale(0);
+    transform: scale(0);
   }
 }
 
 @keyframes finish {
   0% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
   to {
     -webkit-transform: scale(0);
-            transform: scale(0);
+    transform: scale(0);
   }
 }
 
@@ -252,7 +252,7 @@ a:active {
   -webkit-background-clip: text;
   color: transparent;
   -webkit-transform: scale(0);
-          transform: scale(0);
+  transform: scale(0);
 }
 
 .heart-vide {
@@ -266,7 +266,7 @@ a:active {
 
 .heart-anim:hover .heart-vide {
   -webkit-transform: scale(0);
-          transform: scale(0);
+  transform: scale(0);
   -webkit-transition: -webkit-transform 2s;
   transition: -webkit-transform 2s;
   transition: transform 2s;
@@ -275,7 +275,7 @@ a:active {
 
 .heart-anim:hover .heart-plein {
   -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
   -webkit-transition: -webkit-transform 2s;
   transition: -webkit-transform 2s;
   transition: transform 2s;
@@ -284,7 +284,7 @@ a:active {
 
 body {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
@@ -309,8 +309,8 @@ a:visited {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   position: relative;
 }
 
@@ -503,7 +503,7 @@ a:visited {
   margin: 10px;
   padding-bottom: 20px;
   -webkit-column-gap: 20px;
-          column-gap: 20px;
+  column-gap: 20px;
 }
 
 .reservation_btn {
@@ -513,21 +513,27 @@ a:visited {
   width: 200px;
   height: 40px;
   border-radius: 25px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#ff79da),
+    to(#9356dc)
+  );
   background: linear-gradient(180deg, #ff79da, #9356dc);
   text-align: center;
   line-height: 40px;
   border-style: none;
   color: white;
   -webkit-box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.75);
-          box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.75);
 }
 
 .reservation_btn:hover {
   -webkit-box-shadow: 6px 6px 12px 0px black;
-          box-shadow: 6px 6px 12px 0px black;
+  box-shadow: 6px 6px 12px 0px black;
   -webkit-filter: brightness(110%);
-          filter: brightness(110%);
+  filter: brightness(110%);
 }
 
 .btoncommande {
@@ -541,8 +547,8 @@ a:visited {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     width: 100%;
     margin: 10px;
   }
@@ -561,10 +567,10 @@ a:visited {
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -webkit-column-gap: 30px;
-            column-gap: 30px;
+    column-gap: 30px;
   }
   .menu1 {
     width: 100%;
@@ -588,7 +594,7 @@ a:visited {
     justify-content: center;
     margin: 10px;
     -webkit-column-gap: 20px;
-            column-gap: 20px;
+    column-gap: 20px;
   }
 }
 
@@ -605,7 +611,7 @@ input {
 
 body {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "Roboto";
 }
 
@@ -659,21 +665,27 @@ input {
   width: 200px;
   height: 40px;
   border-radius: 25px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#ff79da),
+    to(#9356dc)
+  );
   background: linear-gradient(180deg, #ff79da, #9356dc);
   text-align: center;
   line-height: 40px;
   border-style: none;
   color: white;
   -webkit-box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.75);
-          box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.75);
 }
 
 .reservation_btn:hover {
   -webkit-box-shadow: 6px 6px 12px 0px black;
-          box-shadow: 6px 6px 12px 0px black;
+  box-shadow: 6px 6px 12px 0px black;
   -webkit-filter: brightness(110%);
-          filter: brightness(110%);
+  filter: brightness(110%);
 }
 
 .reservation_btn a {
@@ -687,21 +699,21 @@ input {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   width: 100%;
 }
 
 .fonctionnement_choisissez {
   background-color: #f2f2f2;
   -webkit-box-shadow: 0px 5px 19px -2px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 5px 19px -2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 5px 19px -2px rgba(0, 0, 0, 0.3);
   width: 40%;
   height: 50px;
   min-width: 250px;
@@ -713,7 +725,7 @@ input {
 
 .fonctionnement_choisissez:hover {
   -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  transform: scale(1.05);
   background: #f5edff;
 }
 
@@ -724,7 +736,7 @@ input {
 .fonctionnement_composez {
   background-color: #f2f2f2;
   -webkit-box-shadow: 0px 5px 19px -2px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 5px 19px -2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 5px 19px -2px rgba(0, 0, 0, 0.3);
   width: 40%;
   height: 50px;
   min-width: 250px;
@@ -736,7 +748,7 @@ input {
 
 .fonctionnement_composez:hover {
   -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  transform: scale(1.05);
   background: #f5edff;
 }
 
@@ -747,7 +759,7 @@ input {
 .fonctionnement_degustez {
   background-color: #f2f2f2;
   -webkit-box-shadow: 0px 5px 19px -2px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 5px 19px -2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 5px 19px -2px rgba(0, 0, 0, 0.3);
   width: 40%;
   height: 50px;
   min-width: 250px;
@@ -759,7 +771,7 @@ input {
 
 .fonctionnement_degustez:hover {
   -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  transform: scale(1.05);
   background: #f5edff;
 }
 
@@ -769,7 +781,7 @@ input {
 
 .fonctionnement_icones {
   display: inline-block;
-  background-color: #9356DC;
+  background-color: #9356dc;
   width: 24px;
   height: 24px;
   border-radius: 12px;
@@ -817,14 +829,14 @@ input {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   row-gap: 20px;
 }
 
@@ -843,7 +855,7 @@ input {
   width: 100%;
   height: 70%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .restaurants_fiche_detail {
@@ -860,13 +872,13 @@ input {
   color: #008766;
   position: absolute;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   top: 10px;
   right: 10px;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   border-radius: 3px;
 }
 
@@ -902,11 +914,11 @@ footer {
   width: 150px;
   height: auto;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   padding-left: 30px;
   padding-top: 20px;
   -webkit-filter: invert(100%);
-          filter: invert(100%);
+  filter: invert(100%);
 }
 
 .fa-handshake-angle,
@@ -929,7 +941,7 @@ footer {
 @media screen and (min-width: 992px) {
   body {
     -webkit-box-sizing: content-box;
-            box-sizing: content-box;
+    box-sizing: content-box;
     font-family: "Roboto";
   }
   .logo {
@@ -975,12 +987,12 @@ footer {
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     -webkit-column-gap: 80px;
-            column-gap: 80px;
+    column-gap: 80px;
     padding-top: 20px;
   }
   .fonctionnement_icones {
@@ -998,7 +1010,7 @@ footer {
   .fonctionnement_choisissez {
     background-color: #f2f2f2;
     -webkit-box-shadow: 0px 5px 19px -2px rgba(0, 0, 0, 0.3);
-            box-shadow: 0px 5px 19px -2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 5px 19px -2px rgba(0, 0, 0, 0.3);
     width: 30%;
     height: 50px;
     min-width: 300px;
@@ -1013,7 +1025,7 @@ footer {
   .fonctionnement_composez {
     background-color: #f2f2f2;
     -webkit-box-shadow: 0px 5px 19px -2px rgba(0, 0, 0, 0.3);
-            box-shadow: 0px 5px 19px -2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 5px 19px -2px rgba(0, 0, 0, 0.3);
     width: 30%;
     height: 50px;
     min-width: 300px;
@@ -1028,7 +1040,7 @@ footer {
   .fonctionnement_degustez {
     background-color: #f2f2f2;
     -webkit-box-shadow: 0px 5px 19px -2px rgba(0, 0, 0, 0.3);
-            box-shadow: 0px 5px 19px -2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 5px 19px -2px rgba(0, 0, 0, 0.3);
     width: 30%;
     height: 50px;
     min-width: 300px;
@@ -1076,12 +1088,12 @@ footer {
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     margin-top: 30px;
   }
   .restaurants_fiche {
@@ -1098,7 +1110,7 @@ footer {
     width: 100%;
     height: 75%;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .restaurants_fiche_detail {
     position: relative;
@@ -1113,13 +1125,13 @@ footer {
     color: #008766;
     position: absolute;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     top: 10px;
     right: 10px;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
   .restaurants {
     background-color: #f6f6f6;
